@@ -1,0 +1,781 @@
+*{
+  margin: 0;
+  box-sizing: border-box;
+  border-radius: 5%;
+}
+/* Untuk layar dengan lebar kurang dari atau sama dengan 768px */
+@media (max-width: 768px) {
+  .story {
+    padding: 15px; /* Mengurangi padding agar lebih sesuai dengan layar kecil */
+  }
+  .lingkaran {
+    margin-top: 5px; /* Mengurangi margin atas lingkaran */
+    margin-right: 10px; /* Menambah margin kanan agar terpisah dari teks */
+  }
+  .garis {
+    margin-left: 20px; /* Menyesuaikan margin kiri garis */
+  }
+  #story h3{
+    margin-left: 20px; /* Menyesuaikan margin kiri untuk teks */
+    font-size: 1.2rem;
+  }
+  #story p{
+    font-size: 2rem;
+  }
+
+}
+
+/* Untuk layar dengan lebar kurang dari atau sama dengan 480px */
+@media (max-width: 480px) {
+  .lingkaran{
+    margin-left: -17px;
+  }
+  #story h3 {
+    margin-left: 19px; /* Menyesuaikan margin kiri untuk teks */
+    /* font-size: 0.5.6rem; */
+  }
+  #story p{
+    font-size: 1.5rem;
+  }
+  #groom h3{
+    font-size: 2.3rem;
+    margin-top: -40px;
+  }
+  #bridge h3{
+    font-size: 3rem;
+    margin-top: -45px;
+  }
+  #qoutes p{
+    font-size: 1.2rem;
+  }
+
+  #maps .kotak-maps{
+    margin: 5px auto 10px;
+    margin-left: -5%;
+  }
+}
+
+.opening {
+  position: relative;
+  min-height: 100vh;
+  overflow: hidden; 
+  /* display: flex; */
+  justify-content: center;
+  align-items: flex-end;
+  padding: 20px; 
+  
+}
+
+
+.opening::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  z-index: -1;
+  background-image: url(img/BS\ \(323\ of\ 508\).jpg);
+}
+
+.opening::after {
+  content: ''; /* Membuat lapisan overlay */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url(img/pngwing.com__1_-removebg-preview.png); /* Gradient overlay warna merah marun */
+  /* background-image ;: url(img/BS\ \(323\ of\ 508\).jpg); */
+  background-size: cover;
+  background-position: center;
+  z-index: -1;
+}
+
+.opening p,
+.opening h2 {
+  margin: 10px; /* Menghapus margin bawaan dari elemen */
+  text-align: left; /* Mengatur teks ke kiri */
+  color: rgb(255, 255, 255);
+  /* margin-bottom: 125% ; */
+  
+}
+.opening p:first-child {
+}
+.kotak-opening{
+  margin-top: 110%;
+}
+
+.kotak-beranda {
+  margin-top: 10px;
+  width: 50%;
+  height: 10vh;
+  border-radius: 7%;
+  background-color: rgba(34, 22, 22, 0.444);
+  text-align: center;
+  padding-top: 15px;
+  gap: 12px;
+  color: #ffffff;
+  text-align: center;
+}
+.kotak-beranda h4 {
+  margin: 0; /* Menghapus margin default */
+
+}
+.beranda {
+  position: relative;
+  min-height: 100vh;
+  overflow: hidden; 
+  /* display: flex; */
+  justify-content: center;
+  align-items: flex-end;
+  padding: 20px; 
+  
+}
+.beranda .h4{
+  color: #ffffff;
+}
+.beranda h3,
+.beranda h2 {
+  text-align: center;
+  color: white;
+}
+.beranda::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  z-index: -1;
+  background-image: url(img/BS\ \(283\ of\ 508\).jpg);
+ 
+}
+
+.beranda::after {
+  content: ''; /* Membuat lapisan overlay */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url(img/pngwing.com__1_-removebg-preview.png); /* Gradient overlay warna merah marun */
+  /* background-image ;: url(img/BS\ \(323\ of\ 508\).jpg); */
+  background-size: cover;
+  background-position: center;
+  z-index: -1;
+}
+.qoutes {
+  position: relative;
+  min-height: 100vh;
+  overflow: hidden; 
+  /* display: flex; */
+  justify-content: center;
+  align-items: flex-end;
+  padding: 25px; 
+  /* margin-top: 100px; */
+}
+
+
+.qoutes::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  z-index: -1;
+  background-image: url(img/Desain\ tanpa\ judul_20240220_114822_0000.png);
+ 
+}
+.qoutes::after {
+  content: ''; /* Membuat lapisan overlay */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url(img/pngwing.com__1_-removebg-preview.png); /* Gradient overlay warna merah marun */
+  /* background-image ;: url(img/BS\ \(323\ of\ 508\).jpg); */
+  background-size: cover;
+  background-position: center;
+  z-index: -1;
+}
+.foto-qoutes img {
+  margin-top: -10px;
+  width: 100%; /* Mengisi foto ke dalam kotak */
+  height: 350px; /* Mengisi tinggi kotak dengan foto */
+  object-fit: cover; /* Membuat foto mengisi kotak tanpa merubah rasio aspeknya */
+  border-top-left-radius: 40%; /* Membuat border radius hanya pada sisi atas kiri */
+  border-top-right-radius: 40%; /* Membuat border radius hanya pada sisi atas kanan */
+}
+.teks-qoutes{ 
+  margin-top: 1%;
+  display: block;
+  line-height: 1.5;
+ text-align: center;
+}
+.groom {
+  position: relative;
+  min-height: 100vh;
+  overflow: hidden; 
+  /* display: flex; */
+  justify-content: center;
+  align-items: flex-end;
+  padding: 25px; 
+  /* margin-top: 100px; */
+}
+
+
+.groom::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  z-index: -1;
+  background-image: url(img/Desain\ tanpa\ judul_20240220_114822_0000.png);
+ 
+}
+.groom::after {
+  content: ''; /* Membuat lapisan overlay */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url(img/pngwing.com__1_-removebg-preview.png); /* Gradient overlay warna merah marun */
+  /* background-image ;: url(img/BS\ \(323\ of\ 508\).jpg); */
+  background-size: cover;
+  background-position: center;
+  z-index: -1;
+}
+.text-container {
+  text-align: center;
+  position: absolute;
+  margin-top: 25px;
+  width:90% ;
+  color: #000000; /* Warna teks */ 
+}
+.groom.text-container .p{
+  font-size: 1.2rem;
+}
+.foto-groom {
+  margin-top: 45%;
+  border-top-left-radius: 35%; /* Set border radius top left */
+  border-top-right-radius: 35%; /* Set border radius top right */
+  overflow: hidden; /* Pastikan gambar tidak meluap keluar dari radius */
+  width: 300px; /* Sesuaikan lebar foto */
+  height: 350px; /* Sesuaikan tinggi foto */
+  margin: 8% auto 30px;
+  justify-items: center;
+  background-image: url('img/Faruq.jpeg'); /* Ganti dengan URL gambar yang sesuai */
+  background-size: cover;
+  background-position: center;
+}
+
+.bridge {
+  position: relative;
+  min-height: 100vh;
+  overflow: hidden; 
+  /* display: flex; */
+  justify-content: center;
+  align-items: flex-end;
+  padding: 25px; 
+  /* margin-top: 100px; */
+}
+
+
+.bridge::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  z-index: -1;
+  background-image: url(img/Desain\ tanpa\ judul_20240220_114822_0000.png);
+ 
+}
+.bridge::after {
+  content: ''; /* Membuat lapisan overlay */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url(img/pngwing.com__1_-removebg-preview.png); /* Gradient overlay warna merah marun */
+  /* background-image ;: url(img/BS\ \(323\ of\ 508\).jpg); */
+  background-size: cover;
+  background-position: center;
+  z-index: -1;
+}
+.foto-bridge {
+  margin-top: 45%;
+  border-top-left-radius: 35%; /* Set border radius top left */
+  border-top-right-radius: 35%; /* Set border radius top right */
+  overflow: hidden; /* Pastikan gambar tidak meluap keluar dari radius */
+  width: 300px; /* Sesuaikan lebar foto */
+  height: 350px; /* Sesuaikan tinggi foto */
+  margin: 7% auto 30px;
+  justify-items: center;
+  background-image: url('img/WINDA\ AYU.jpg'); /* Ganti dengan URL gambar yang sesuai */
+  background-size: cover;
+  background-position: center;
+}
+.acara {
+  position: relative;
+  min-height: 100vh;
+  overflow: hidden; 
+  /* display: flex; */
+  justify-content: center;
+  align-items: flex-end;
+  padding: 25px; 
+  /* margin-top: 100px; */
+  line-height: 1.2;
+}
+
+
+.acara::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  z-index: -1;
+  background-image: url(img/Desain\ tanpa\ judul_20240220_114822_0000.png);
+ 
+}
+.acara::after {
+  content: ''; /* Membuat lapisan overlay */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url(img/pngwing.com__1_-removebg-preview.png); /* Gradient overlay warna merah marun */
+  /* background-image ;: url(img/BS\ \(323\ of\ 508\).jpg); */
+  background-size: cover;
+  background-position: center;
+  z-index: -1;
+}
+.acara1{
+  margin-top: 43%;
+}
+.acara2{
+  margin-top: 25%;
+}
+.acara h3{
+  font-size: 1.6rem;
+  font-weight: bold;
+
+}
+.acara p{
+  font-size: 1.4rem;
+}
+.acara p1{
+  font-size: 1.2rem;
+}
+.maps {
+  position: relative;
+  min-height: 100vh;
+  overflow: hidden; 
+  /* display: flex; */
+  justify-content: center;
+  align-items: flex-end;
+  padding: 25px; 
+  /* margin-top: 100px; */
+}
+
+
+.maps::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  z-index: -1;
+  background-image: url(img/Desain\ tanpa\ judul_20240220_114822_0000.png);
+ 
+}
+.maps::after {
+  content: ''; /* Membuat lapisan overlay */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url(img/pngwing.com__1_-removebg-preview.png); /* Gradient overlay warna merah marun */
+  /* background-image ;: url(img/BS\ \(323\ of\ 508\).jpg); */
+  background-size: cover;
+  background-position: center;
+  z-index: -1;
+}
+.kotak-maps{
+  /* margin-top: 45%; */
+  border-top-left-radius: 20%; /* Set border radius top left */
+  border-bottom-right-radius: 20%; /* Set border radius top right */
+  overflow: hidden; /* Pastikan gambar tidak meluap keluar dari radius */
+  width: 350px; /* Sesuaikan lebar foto */
+  height: 250px; /* Sesuaikan tinggi foto */
+  margin: 59px auto 30px;
+  justify-items: center;
+  background-image: url('img/WhatsApp\ Image\ 2024-02-21\ at\ 10.42.29.jpeg'); /* Ganti dengan URL gambar yang sesuai */
+  background-size: cover;
+  background-position: center;
+  border-color: black;
+}
+.maps2{
+  margin-top: 5%;
+}
+.alamat{
+  margin-bottom: 25px;
+}
+.btn-bro{
+  height: 20vh;
+  width: 110px;
+  background-color: rgb(185, 154, 154);
+  color: azure;
+}
+.gallery {
+  position: relative;
+  min-height: 100vh;
+  overflow: hidden; 
+  /* display: flex; */
+  justify-content: center;
+  align-items: flex-end;
+  padding: 25px; 
+  /* margin-top: 100px; */
+}
+
+
+.gallery::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  z-index: -1;
+  background-image: url(img/Desain\ tanpa\ judul_20240220_114822_0000.png);
+ 
+}
+.gallery::after {
+  content: ''; /* Membuat lapisan overlay */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url(img/pngwing.com__1_-removebg-preview.png); /* Gradient overlay warna merah marun */
+  /* background-image ;: url(img/BS\ \(323\ of\ 508\).jpg); */
+  background-size: cover;
+  background-position: center;
+  z-index: ;
+}
+.gallery-images12 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.gallery-image12 {
+  margin: 2px;
+  width: calc(30% - 5px);
+}
+.gallery-images14 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.gallery-image14 {
+  margin: 2px;
+  width: calc(32% - 5px);
+}
+.gallery-image14 img {
+  width: 100%;
+  height: auto;
+}
+.gallery-image12 img {
+  width: 100%;
+  height: auto;
+}
+.gallery h2{
+  margin-bottom: 25px;
+}
+.gallery-image13 {
+  margin: 2px;
+  width: calc(67% - 6px);
+  height: 1%;
+}
+
+.gallery-image13 img {
+  width: 100%;
+  height: auto;
+}
+.gallery-video13 {
+  margin: 2px;
+  width: calc(110% - 20px);
+}
+
+.gallery-video13 video {
+  width: 100%;
+  height: auto;
+}
+.story {
+  position: relative;
+  min-height: 100vh;
+  overflow: hidden; 
+  /* display: flex; */
+  justify-content: center;
+  align-items: flex-end;
+  padding: 25px; 
+  /* margin-top: 100px; */
+}
+
+
+.story::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  z-index: -1;
+  background-image: url(img/Desain\ tanpa\ judul_20240220_114822_0000.png);
+ 
+ 
+}
+.story::after {
+  content: ''; /* Membuat lapisan overlay */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url(img/pngwing.com__1_-removebg-preview.png); /* Gradient overlay warna merah marun */
+  /* background-image ;: url(img/BS\ \(323\ of\ 508\).jpg); */
+  background-size: cover;
+  background-position: center;
+  z-index: -1;
+}
+.lingkaran {
+  height: 25px;
+  width: 25px;
+  background-color: #d000006b;
+  border-radius: 50%;
+  display: inline-block;
+  margin-top: 0px;
+  float: left; 
+  
+}
+
+.garis {
+  margin-top: 5px;
+  border-left: 1px solid #838383;
+  height: 250px;
+  margin-left: 11px;
+  /* float: left; Mengatur posisi elemen ke kiri */
+  
+}
+
+#story h3{
+  margin-left: 15px;
+  margin-bottom: px;
+}
+#story p {
+  margin-left: 15px; 
+  font-size: 0.95rem;
+}
+#story h2{
+  margin-bottom: 10px;
+}
+
+.filter {
+  position: relative;
+  min-height: 100vh;
+  overflow: hidden; 
+  /* display: flex; */
+  justify-content: center;
+  align-items: flex-end;
+  padding: 25px; 
+  /* margin-top: 100px; */
+}
+
+
+.filter::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  z-index: -2;
+  background-image: url(img/Desain\ tanpa\ judul_20240220_114822_0000.png);
+ 
+}
+.filter::after {
+  content: ''; /* Membuat lapisan overlay */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url(img/pngwing.com__1_-removebg-preview.png); /* Gradient overlay warna merah marun */
+  /* backgroun-image ;: url(img/BS\ \(323\ of\ 508\).jpg); */
+  background-size: cover;
+  background-position: center;
+  z-index: -1;
+}
+.filter img {
+  margin-top: 70%;
+  border-top-left-radius: 10%; /* Set border radius top left */
+  border-top-right-radius: 10%; /* Set border radius top right */
+  overflow: hidden; /* Pastikan gambar tidak meluap keluar dari radius */
+  width: 100%; /* Sesuaikan lebar foto */
+  height: 67vh; /* Sesuaikan tinggi foto */
+  margin: 59px auto 30px;
+  margin-right:px;
+  justify-items: center;
+  background-image: url('img/Faruq.jpeg'); /* Ganti dengan URL gambar yang sesuai */
+  background-size: cover;
+  background-position: center;
+}
+.btn{
+  height: 5vh;
+  width: 100%;
+  border-radius: 15%;
+  background-color: rgba(255, 255, 225, 0.648);
+  font-size: 1.2rem;
+}
+.thanks {
+  position: relative;
+  min-height: 100vh;
+  overflow: hidden; 
+  /* display: flex; */
+  justify-content: center;
+  align-items: flex-end;
+  padding: 25px; 
+  /* margin-top: 100px; */
+  display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.thanks::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  z-index: -1;
+  background-image: url(img/Desain\ tanpa\ judul_20240220_114822_0000.png);
+ 
+}
+.thanks::after {
+  content: ''; /* Membuat lapisan overlay */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url(img/pngwing.com__1_-removebg-preview.png); /* Gradient overlay warna merah marun */
+  /* background-image ;: url(img/BS\ \(323\ of\ 508\).jpg); */
+  background-size: cover;
+  background-position: center;
+  z-index: -1;
+}
+.kotak1{
+  margin: 2px;
+  width: calc(64% - 5px);
+  height: 1%;
+  transform: rotate(-3deg);
+  z-index: -1;
+}
+
+.kotak1 img{
+  width: 122%;
+  height: 25h;
+  border: 2px solid black;
+}
+.kotak2{
+  margin-bottom: 10px;
+  width: calc(64% - 5px);
+  height: 1%;
+}
+
+.kotak2 img{
+  width: 122%;
+  height: 25h;
+  border: 2px solid black;
+}
+.teks-thanks{
+  margin-top: 85%;
+  text-align: center;
+  /* font-family: cursive; */
+  
+}
+.teks-thanks p{
+  font-size: 1.3rem;
+}
+.teks-thanks h3{
+  font-size: 1.3rem;
+  font-family: serif;
+  
+}
+.teks-thanks h1{
+  font-size: 2.5rem;
+  font-family: serif;
+  
+}
+div.scrollmenu {
+  width: 100%;
+  background-color: #ff03035b;
+  overflow-x: auto;
+  white-space: nowrap;
+  position: fixed;
+  bottom: 0;
+  display: block;
+ z-index: 9999;
+ color: #ffffff;
+}
+
+.scrollmenu a {
+display: inline-block;
+text-align: center;
+padding: 14px;
+text-decoration: none;
+color: #ffffff
+
+}
+
+div.scrollmenu a:hover {
+background-color: #ffffff9d;
+}
