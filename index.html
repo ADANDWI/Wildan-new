@@ -16,7 +16,9 @@
     <div class="kotak-beranda">
       <h4>Kepada Yth: <br><span>Bapak/Ibu/Saudara/i,</span></h4>
     </div>
-    <a href="#opening" class="btn1 btn-lg mt-90" onClick="enableScroll()">Lihat Undangan</a>
+    <div class="button-container"></div>
+    <a class="button btn-lg mt-9" >Lihat Undangan</a>
+  </div>
   </main>
 </section>
     <script>
@@ -74,7 +76,7 @@
   // Panggil fungsi play pada elemen audio saat tombol "Lihat Undangan" diklik
   document.addEventListener("DOMContentLoaded", function() {
       var audio = document.getElementById("my_audio");
-      var button = document.querySelector('.btn1');
+      var button = document.querySelector('.button');
       button.addEventListener('click', function() {
         audio.play();
       });
@@ -94,13 +96,12 @@
       <a href="#thanks">Thanks</a>
   </div>
 
-  <div id="opening" class="opening content">
+  <div id="opening" class="opening content hidden">
     <div class="layout animated-element"></div>
     <div class="kotak-opening bawah-atas ">
     <p>We are Getting Married</p>
     <h2>FAISAL FARUQ <br> & WINDA AYU AMELIA</h2>
     <p>Sabtu, 15 Juli 2023</p>
-    <p>Pertemuan itu tidak akan salah tempat,<br>tidak akan salah waktu, apa lagi salah <br>orang.</p>
   </div>
 </div>  
   <div id="qoutes" class="qoutes content">
@@ -140,8 +141,8 @@
           <i>Putri dari :</i><br>
           Bapak Khoirul Huda & Ibu Nurhidayah
       </p>
-      <a href="https://www.instagram.com/faisalfrq/">
-        <p style="font-size: 22px; color: rgb(0, 0, 0);">faisalfrq</p>
+      <a href="https://www.instagram.com/wndh_ayu/">
+        <p style="font-size: 22px; color: rgb(0, 0, 0);">wndh_ayu</p>
       </a>
   </div>
 </div>
@@ -154,7 +155,7 @@
 </div>
 <div class="acara2 kiri-kanan">
   <center><h3>RESEPSI</h3>
-  <p>Minggu, 16 april 2024 <br>Akad : 07.00 - Selesai WIB <br> </p>
+  <p>Minggu, 16 april 2024 <br>Akad : 18.00 - Selesai WIB <br> </p>
   <p1> Bertempat Di Kediaman <br> JL. Jaksa Agung Suprapto Gang 2 no 18 </p1></center>
 </div>
 </div>
@@ -219,11 +220,14 @@
   </div>
 <div id="filter" class="filter content">
   <div class="layout animated-element"></div>
-  <img src="img/WhatsApp Image 2024-02-23 at 09.33.19.jpeg" alt="" width="100%" >
-  <center><a href="https://www.instagram.com/ar/380022517963862/"><button class="btn">Use Filter</button></a></center>
+  <img class="kanan-kiri" src="img/WhatsApp Image 2024-02-23 at 09.33.19.jpeg" alt="" width="100%" >
+  <center><a href="https://www.instagram.com/ar/380022517963862/"><button class="btn kiri-kanan">Use Filter</button></a></center>
 </div>  
 <div id="thanks" class="thanks content">
   <div class="layout animated-element"></div>
+  <div class="kotak2">
+    <img src="img/BS (274 of 318).jpg" alt="">
+  </div>
   <div class="teks-thanks">
   <p>Merupakan suatu kebahagiaan bagi kami atas <br> kehadiran Bapak/Ibu untuk memberikan doa restu</p>
   <h3>Hormat kami yang mengundang</h3>
