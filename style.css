@@ -1,3 +1,17 @@
+body {
+  overflow: hidden;
+}
+
+/* Sembunyikan scrollbar di Webkit */
+::-webkit-scrollbar {
+  display: none;
+}
+
+/* Sembunyikan scrollbar di Mozilla */
+::-moz-scrollbar {
+  display: none;
+}
+
 *{
   margin: 0;
   box-sizing: border-box;
@@ -716,6 +730,7 @@ div.scrollmenu {
   display: none;
  z-index: 9999;
  color: #ffffff;
+ z-index: 9999;
 }
 
 .scrollmenu a {
