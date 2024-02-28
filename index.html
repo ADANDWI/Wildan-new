@@ -8,6 +8,19 @@
   <link rel="stylesheet" href="countdown/simplyCountdown.theme.default.css">
 </head>
 <body>
+  <section id="awalan" class="awalan content ">
+    <div class="layout animated-element"></div>
+    <main>
+      <h3 style="color : white;">The Wedding Of</h3>
+      <h2 style="color: white;">FARUQ & WINDA</h2>
+      <div class="kotak-beranda">
+        <h4>Kepada Yth: <br><span>Bapak/Ibu/Saudara/i,</span></h4>
+      </div>
+      <div class="button-container"></div>
+      <a href="#opening" class="button btn-lg mt-9" onClick="showInvitation()">Lihat Undangan</a>
+    </div>
+    </main>
+  </section>
  <section id="beranda" class="beranda content ">
   <div class="layout animated-element"></div>
   <main>
@@ -95,6 +108,22 @@
       <a href="#filter">Filter</a>
       <a href="#thanks">Thanks</a>
   </div>
+  <script>
+    function showInvitation() {
+  // Tampilkan navbar
+  document.querySelector('.scrollmenu').style.display = 'block';
+
+  // Tampilkan halaman-halaman lainnya
+  document.querySelectorAll('.content').forEach(content => {
+    content.style.display = 'block';
+  });
+
+  // Sembunyikan halaman Awalan
+  document.querySelector('.awalan').style.display = 'none';
+}
+
+  </script>
+
 
   <div id="opening" class="opening content hidden">
     <div class="layout animated-element"></div>

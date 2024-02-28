@@ -3,6 +3,9 @@
   box-sizing: border-box;
   border-radius: 5%;
 }
+.content{
+  display: none;
+}
 /* Untuk layar dengan lebar kurang dari atau sama dengan 768px */
 @media (max-width: 768px) {
   .story {
@@ -97,6 +100,39 @@
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 .opening p:first-child {
+}
+.awalan {
+  display: block;
+  position: relative;
+  min-height: 100vh;
+  overflow: hidden; 
+  /* display: flex; */
+  justify-content: center;
+  align-items: flex-end;
+  padding: 30px; 
+  overflow-x: hidden;
+  
+}
+.awalan .h4{
+  color: #ffffff;
+}
+.awalan h3,
+.awalan h2 {
+  text-align: center;
+  color: white;
+}
+.awalan::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  z-index: -1;
+  background-image: url(img/BS\ \(283\ of\ 508\).jpg);
+ 
 }
 .kotak-opening{
   margin-top: 110%;
@@ -602,13 +638,11 @@
 .thanks {
   position: relative;
   min-height: 100vh;
-  overflow: hidden; 
+
   /* display: flex; */
   justify-content: center;
   align-items: flex-end;
   padding: 25px; 
-  /* margin-top: 100px; */
-  display: flex;
     flex-direction: column;
     align-items: center;
 }
@@ -679,7 +713,7 @@ div.scrollmenu {
   white-space: nowrap;
   position: fixed;
   bottom: 0;
-  display: block;
+  display: none;
  z-index: 9999;
  color: #ffffff;
 }
