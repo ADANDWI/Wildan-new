@@ -8,14 +8,15 @@
   <link rel="stylesheet" href="countdown/simplyCountdown.theme.default.css">
 </head>
 <body>
- <section id="beranda" class="beranda content">
+ <section id="beranda" class="beranda content ">
+  <div class="layout animated-element"></div>
   <main>
-    <h3 style="color: white;">The Wedding of</h3>
+    <h3 style="color : white;">The Wedding Of</h3>
     <h2 style="color: white;">FARUQ & WINDA</h2>
     <div class="kotak-beranda">
-      <h4>Kepada Yth: <br><span>Bapak/Ibu/Saudara/i, <br>NAMA TAMU</span></h4>
+      <h4>Kepada Yth: <br><span>Bapak/Ibu/Saudara/i,</span></h4>
     </div>
-    <a href="#opening" class="btn btn-lg mt-4" onClick="openFullScreen()">Lihat Undangan</a>
+    <a href="#opening" class="btn1 btn-lg mt-90" onClick="enableScroll()">Lihat Undangan</a>
   </main>
 </section>
     <script>
@@ -26,7 +27,8 @@
       namaContainer.innerText = `${pronoun} ${nama},`.replace(/ ,$/, ',');
   
       document.querySelector('#nama').value = nama;
-
+      </script>
+      <script>
     function enableScroll() {
         function smoothScroll(target, duration) {
             var targetElement = document.querySelector(target);
@@ -72,7 +74,7 @@
   // Panggil fungsi play pada elemen audio saat tombol "Lihat Undangan" diklik
   document.addEventListener("DOMContentLoaded", function() {
       var audio = document.getElementById("my_audio");
-      var button = document.querySelector('.btn');
+      var button = document.querySelector('.btn1');
       button.addEventListener('click', function() {
         audio.play();
       });
@@ -93,7 +95,8 @@
   </div>
 
   <div id="opening" class="opening content">
-    <div class="kotak-opening ">
+    <div class="layout animated-element"></div>
+    <div class="kotak-opening bawah-atas ">
     <p>We are Getting Married</p>
     <h2>FAISAL FARUQ <br> & WINDA AYU AMELIA</h2>
     <p>Sabtu, 15 Juli 2023</p>
@@ -101,12 +104,12 @@
   </div>
 </div>  
   <div id="qoutes" class="qoutes content">
-    
-    <div class="foto-qoutes">
+    <div class="layout animated-element"></div> 
+    <div class="foto-qoutes bawah-atas">
       <img src="img/BS (246 of 508).jpg" alt="">
     </div>
   
-    <div class="teks-qoutes">
+    <div class="teks-qoutes atas-bawah">
       <p class="px-2 ">
         Dan di antara tanda-tanda (kebesaran)-Nya ialah Dia menciptakan pasangan-pasangan untukmu dari jenismu sendiri, agar kamu cenderung dan merasa tenteram kepadanya, dan Dia menjadikan di antaramu rasa kasih dan sayang. Sungguh, pada yang demikian itu benar-benar terdapat tanda-tanda (kebesaran Allah) bagi kaum yang berpikir.
       </p>
@@ -115,9 +118,9 @@
   </div>
   
   <div id="groom" class="groom content">
-    
-    <div class="foto-groom"></div>
-    <div class="text-container">
+    <div class="layout animated-element"></div>
+    <div class="foto-groom bawah-atas"></div>
+    <div class="text-container atas-bawah">
         <h3 >FAISAL FARUQ</h3>
         <p style="font-size: 2rem;">
             <i>Putra dari :</i><br>
@@ -129,8 +132,9 @@
     </div>
 </div>
 <div id="bridge" class="bridge content">
-  <div class="foto-bridge"></div>
-  <div class="text-container">
+  <div class="layout animated-element "></div>
+  <div class="foto-bridge bawah-atas"></div>
+  <div class="text-container atas-bawah">
       <h3 >WINDA AYU</h3>
       <p style="font-size: 2rem;">
           <i>Putri dari :</i><br>
@@ -142,31 +146,34 @@
   </div>
 </div>
 <div id="acara" class="acara content">
-  <div class="acara1">
+  <div class="layout animated-element"></div>
+  <div class="acara1 kanan-kiri">
   <center><h3>AKAD</h3>
   <p>Minggu, 16 april 2024 <br>Akad : 07.00 - Selesai WIB <br> </p>
   <p1> Bertempat Di Kediaman <br> JL. Jaksa Agung Suprapto Gang 2 no 18 </p1></center>
 </div>
-<div class="acara2">
+<div class="acara2 kiri-kanan">
   <center><h3>RESEPSI</h3>
   <p>Minggu, 16 april 2024 <br>Akad : 07.00 - Selesai WIB <br> </p>
   <p1> Bertempat Di Kediaman <br> JL. Jaksa Agung Suprapto Gang 2 no 18 </p1></center>
 </div>
 </div>
 <div id="maps" class="maps content">
+  <div class="layout animated-element"></div>
   <div class="maps2 col-md-8 col-10 text-center">
-    <center><h2>Informasi Acara</h2>
-      <div class="simply-countdown "></div>
-    <div class="kotak-maps"></div>
+    <center><h2 class="bawah-atas">Informasi Acara</h2>
+      <div class="simply-countdown bawah-atas "></div>
+    <div class="kotak-maps atas-bawah"></div>
     <div></div>
-    <p class="alamat">Alamat: Gresik, Jawa Timur. <br> Jl. Jaksa Agung Suprapto Gang 2 No 8</p>
+    <p class="alamat atas-bawah">Alamat: Gresik, Jawa Timur. <br> Jl. Jaksa Agung Suprapto Gang 2 No 8</p>
 
       <a class="btn-bro" href="https://www.google.com/maps/place/Jl.+Jaksa+Agung+Suprapto+Gg.+II+No.18,+Tlogobendung,+Bedilan,+Kec.+Gresik,+Kabupaten+Gresik,+Jawa+Timur+61111/@-7.1616841,112.6539431,17z/data=!3m1!4b1!4m5!3m4!1s0x2dd80045392ddbc3:0xf2a4675bda477eb7!8m2!3d-7.1616841!4d112.6539431?entry=ttu" target="_blank" class="btn btn-light btn-sm my-3">Klik untuk
         membuka peta</a></center>
   </div>
 </div>
 <div id="gallery" class="gallery content">
-  <center><h2>Our Gallery</h2></center>
+  <div class="layout animated-element"></div>
+  <center><h2 class="bawah-atas">Our Gallery</h2></center>
   <div class="gallery-images12 ">
     <div class="gallery-image12 slide-left">
       <img src="img/BS (299 of 318).jpg" alt="Image 2"  >
@@ -192,28 +199,31 @@
   </div>
 </div>
   <div id="story" class="story content">
+    <div class="layout animated-element"></div>
     <center><h2>LOVE STORY</h2></center>
     <div class="lingkaran"></div>
-    <h3>Pertemuan</h3>
-    <p>Tidak ada yang kebetulan di dunia ini, semua sudah tersusun rapi oleh sang maha kuasa, kita tidak bisa memilih kepada siapa kita akan jatuh cinta, kami bertemu di tahun 2016 tepatnya saat kami kelas 2 MTs. Tidak ada yang pernah menyangka bahwa pertemuan itu akan membawa kami pada suatu ikatan sutu hari nanti 
+    <h3 class="kanan-kiri">Pertemuan</h3>
+    <p class="kanan-kiri">Tidak ada yang kebetulan di dunia ini, semua sudah tersusun rapi oleh sang maha kuasa, kita tidak bisa memilih kepada siapa kita akan jatuh cinta, kami bertemu di tahun 2016 tepatnya saat kami kelas 2 MTs. Tidak ada yang pernah menyangka bahwa pertemuan itu akan membawa kami pada suatu ikatan sutu hari nanti 
     </p>
     <div class="lingkaran"></div>
-    <h3>Pendekatan</h3>
-    <p>Singkat cerita, seiring berjalannya waktu kami terus berkomunikasi saling bertukar cerita dan berkeluh kesah ,dan sampai akhirnya kami berdua saling nyatakan perasaan dan berkomitmen untuk menjalani hubungan berpacaran 
+    <h3 class="kiri-kanan">Pendekatan</h3>
+    <p class="kiri-kanan">Singkat cerita, seiring berjalannya waktu kami terus berkomunikasi saling bertukar cerita dan berkeluh kesah ,dan sampai akhirnya kami berdua saling nyatakan perasaan dan berkomitmen untuk menjalani hubungan berpacaran 
     </p>
     <div class="lingkaran"></div>
-    <h3>Lamaran</h3>
-    <p>Semakin lama kami semakin merasa saling melengkapi satu sama lain dan merasakan bahwa memang dialah orang yang cocok untuk menjadi teman hidup baik suka dan duka. Sesuai dengan kesepakatan kami berdua. kami telah memutuskan untuk melanjutkan hubungan ke jenjang yang lebih serius dan di saksikan oleh kedua belah pihak keluarga 
+    <h3 class="kanan-kiri">Lamaran</h3>
+    <p class="kanan-kiri">Semakin lama kami semakin merasa saling melengkapi satu sama lain dan merasakan bahwa memang dialah orang yang cocok untuk menjadi teman hidup baik suka dan duka. Sesuai dengan kesepakatan kami berdua. kami telah memutuskan untuk melanjutkan hubungan ke jenjang yang lebih serius dan di saksikan oleh kedua belah pihak keluarga 
     </p>
     <div class="lingkaran"></div>
-    <h3>Menikah</h3>
-    <p>Percayalah, bukan karna bertemu lalu berjodoh tapi karena berjodoh lah maka kami dipertemukan, InsyaAllah tepat pada tanggal 16 April 2024 kami akan melangsungkan moment yang ditunggu-tunggu untuk menjadi ikatan sah yaitu akad nikah </p>
+    <h3 class="kiri-kanan">Menikah</h3>
+    <p class="kiri-kanan">Percayalah, bukan karna bertemu lalu berjodoh tapi karena berjodoh lah maka kami dipertemukan, InsyaAllah tepat pada tanggal 16 April 2024 kami akan melangsungkan moment yang ditunggu-tunggu untuk menjadi ikatan sah yaitu akad nikah </p>
   </div>
 <div id="filter" class="filter content">
+  <div class="layout animated-element"></div>
   <img src="img/WhatsApp Image 2024-02-23 at 09.33.19.jpeg" alt="" width="100%" >
   <center><a href="https://www.instagram.com/ar/380022517963862/"><button class="btn">Use Filter</button></a></center>
 </div>  
 <div id="thanks" class="thanks content">
+  <div class="layout animated-element"></div>
   <div class="teks-thanks">
   <p>Merupakan suatu kebahagiaan bagi kami atas <br> kehadiran Bapak/Ibu untuk memberikan doa restu</p>
   <h3>Hormat kami yang mengundang</h3>

@@ -80,20 +80,6 @@
   background-image: url(img/BS\ \(323\ of\ 508\).jpg);
 }
 
-.opening::after {
-  content: ''; /* Membuat lapisan overlay */
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: url(img/pngwing.com__1_-removebg-preview.png); /* Gradient overlay warna merah marun */
-  /* background-image ;: url(img/BS\ \(323\ of\ 508\).jpg); */
-  background-size: cover;
-  background-position: center;
-  z-index: -1;
-}
-
 .opening p,
 .opening h2 {
   margin: 10px; /* Menghapus margin bawaan dari elemen */
@@ -110,20 +96,42 @@
 
 .kotak-beranda {
   margin-top: 10px;
-  width: 50%;
-  height: 10vh;
+  width: 70%;
+  height: 11vh;
   border-radius: 7%;
   background-color: rgba(34, 22, 22, 0.444);
   text-align: center;
-  padding-top: 15px;
   gap: 12px;
   color: #ffffff;
   text-align: center;
+  margin-left: 15%;
 }
 .kotak-beranda h4 {
   margin: 0; /* Menghapus margin default */
-
+  font-family:'Times New Roman';
+  font-size: 1.3rem;
+  padding-top: 5%;
+  margin-bottom: 10%;
 }
+.beranda h2{
+  font-style: 'impact';
+  font-size: 2.2rem;
+}
+.beranda h3{
+  font-style: 'impact';
+  font-size: 1.5rem;
+}
+.btn1{
+  height: ;
+  width: 100%;
+  border-radius: 15%;
+  background-color: rgba(255, 9, 9, 0.648)
+  font-size: 1.2rem;
+  color: white;
+  z-index: 9999;
+  
+}
+
 .beranda {
   position: relative;
   min-height: 100vh;
@@ -131,7 +139,8 @@
   /* display: flex; */
   justify-content: center;
   align-items: flex-end;
-  padding: 20px; 
+  padding: 30px; 
+  overflow: hidden;
   
 }
 .beranda .h4{
@@ -156,7 +165,7 @@
  
 }
 
-.beranda::after {
+.layout::after {
   content: ''; /* Membuat lapisan overlay */
   position: absolute;
   top: 0;
@@ -193,19 +202,6 @@
   z-index: -1;
   background-image: url(img/Desain\ tanpa\ judul_20240220_114822_0000.png);
  
-}
-.qoutes::after {
-  content: ''; /* Membuat lapisan overlay */
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: url(img/pngwing.com__1_-removebg-preview.png); /* Gradient overlay warna merah marun */
-  /* background-image ;: url(img/BS\ \(323\ of\ 508\).jpg); */
-  background-size: cover;
-  background-position: center;
-  z-index: -1;
 }
 .foto-qoutes img {
   margin-top: -10px;
@@ -246,19 +242,7 @@
   background-image: url(img/Desain\ tanpa\ judul_20240220_114822_0000.png);
  
 }
-.groom::after {
-  content: ''; /* Membuat lapisan overlay */
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: url(img/pngwing.com__1_-removebg-preview.png); /* Gradient overlay warna merah marun */
-  /* background-image ;: url(img/BS\ \(323\ of\ 508\).jpg); */
-  background-size: cover;
-  background-position: center;
-  z-index: -1;
-}
+
 .text-container {
   text-align: center;
   position: absolute;
@@ -308,19 +292,7 @@
   background-image: url(img/Desain\ tanpa\ judul_20240220_114822_0000.png);
  
 }
-.bridge::after {
-  content: ''; /* Membuat lapisan overlay */
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: url(img/pngwing.com__1_-removebg-preview.png); /* Gradient overlay warna merah marun */
-  /* background-image ;: url(img/BS\ \(323\ of\ 508\).jpg); */
-  background-size: cover;
-  background-position: center;
-  z-index: -1;
-}
+
 .foto-bridge {
   margin-top: 45%;
   border-top-left-radius: 35%; /* Set border radius top left */
@@ -359,19 +331,6 @@
   z-index: -1;
   background-image: url(img/Desain\ tanpa\ judul_20240220_114822_0000.png);
  
-}
-.acara::after {
-  content: ''; /* Membuat lapisan overlay */
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: url(img/pngwing.com__1_-removebg-preview.png); /* Gradient overlay warna merah marun */
-  /* background-image ;: url(img/BS\ \(323\ of\ 508\).jpg); */
-  background-size: cover;
-  background-position: center;
-  z-index: -1;
 }
 .acara1{
   margin-top: 43%;
@@ -415,19 +374,7 @@
   background-image: url(img/Desain\ tanpa\ judul_20240220_114822_0000.png);
  
 }
-.maps::after {
-  content: ''; /* Membuat lapisan overlay */
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: url(img/pngwing.com__1_-removebg-preview.png); /* Gradient overlay warna merah marun */
-  /* background-image ;: url(img/BS\ \(323\ of\ 508\).jpg); */
-  background-size: cover;
-  background-position: center;
-  z-index: -1;
-}
+
 .kotak-maps{
   /* margin-top: 45%; */
   border-top-left-radius: 20%; /* Set border radius top left */
@@ -478,19 +425,6 @@
   z-index: -1;
   background-image: url(img/Desain\ tanpa\ judul_20240220_114822_0000.png);
  
-}
-.gallery::after {
-  content: ''; /* Membuat lapisan overlay */
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: url(img/pngwing.com__1_-removebg-preview.png); /* Gradient overlay warna merah marun */
-  /* background-image ;: url(img/BS\ \(323\ of\ 508\).jpg); */
-  background-size: cover;
-  background-position: center;
-  z-index: ;
 }
 .gallery-images12 {
   display: flex;
@@ -568,19 +502,6 @@
  
  
 }
-.story::after {
-  content: ''; /* Membuat lapisan overlay */
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: url(img/pngwing.com__1_-removebg-preview.png); /* Gradient overlay warna merah marun */
-  /* background-image ;: url(img/BS\ \(323\ of\ 508\).jpg); */
-  background-size: cover;
-  background-position: center;
-  z-index: -1;
-}
 .lingkaran {
   height: 25px;
   width: 25px;
@@ -638,19 +559,6 @@
   background-image: url(img/Desain\ tanpa\ judul_20240220_114822_0000.png);
  
 }
-.filter::after {
-  content: ''; /* Membuat lapisan overlay */
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: url(img/pngwing.com__1_-removebg-preview.png); /* Gradient overlay warna merah marun */
-  /* backgroun-image ;: url(img/BS\ \(323\ of\ 508\).jpg); */
-  background-size: cover;
-  background-position: center;
-  z-index: -1;
-}
 .filter img {
   margin-top: 70%;
   border-top-left-radius: 10%; /* Set border radius top left */
@@ -698,19 +606,6 @@
   z-index: -1;
   background-image: url(img/Desain\ tanpa\ judul_20240220_114822_0000.png);
  
-}
-.thanks::after {
-  content: ''; /* Membuat lapisan overlay */
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: url(img/pngwing.com__1_-removebg-preview.png); /* Gradient overlay warna merah marun */
-  /* background-image ;: url(img/BS\ \(323\ of\ 508\).jpg); */
-  background-size: cover;
-  background-position: center;
-  z-index: -1;
 }
 .kotak1{
   margin: 2px;
@@ -779,3 +674,70 @@ color: #ffffff
 div.scrollmenu a:hover {
 background-color: #ffffff9d;
 }
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.animated-element {
+  animation: fadeIn 2s ease-out;
+}
+/* CSS */
+@keyframes slideInFromTop {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.bawah-atas {
+  animation: slideInFromTop 1.2s ease-out;
+}
+/* CSS */
+@keyframes slideInFromBottom {
+  0% {
+    transform: translateY(100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.atas-bawah {
+  animation: slideInFromBottom 1.2s ease-out;
+}
+/* CSS */
+@keyframes slideInFromRight {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.kanan-kiri {
+  animation: slideInFromRight 1.2s ease-out;
+}
+/* CSS */
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.kiri-kanan {
+  animation: slideInFromLeft 1.2s ease-out;
+}
+
