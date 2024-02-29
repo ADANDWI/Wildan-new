@@ -43,43 +43,6 @@
   
       document.querySelector('#nama').value = nama;
       </script>
-      <script>
-    function enableScroll() {
-        function smoothScroll(target, duration) {
-            var targetElement = document.querySelector(target);
-            var targetPosition = targetElement.offsetTop;
-            var startPosition = window.pageYOffset;
-            var distance = targetPosition - startPosition;
-            var startTime = null;
-
-            function animation(currentTime) {
-                if (startTime === null) startTime = currentTime;
-                var timeElapsed = currentTime - startTime;
-                var run = ease(timeElapsed, startPosition, distance, duration);
-                window.scrollTo(0, run);
-                if (timeElapsed < duration) requestAnimationFrame(animation);
-            }
-
-            function ease(t, b, c, d) {
-                t /= d / 2;
-                if (t < 1) return (c / 2) * t * t + b;
-                t--;
-                return (-c / 2) * (t * (t - 2) - 1) + b;
-            }
-            requestAnimationFrame(animation);
-
-            // Setelah tombol diklik, ubah overflow menjadi auto untuk memungkinkan pengguliran
-            document.documentElement.style.overflow = 'auto';
-            document.body.style.overflow = 'auto';
-            document.body.classList.add('scrollable');
-        }
-
-        var rootElement = document.documentElement;
-        window.onscroll = function() {};
-        rootElement.style.scrollBehavior = 'smooth';
-        smoothScroll('#hero1', 1000); // Ganti '#hero' dengan ID bagian undangan yang ingin digulirkan
-    }
-  </script>
   <audio id="my_audio" loop>
     <source src="audio/Tiara Andini, Arsy Widianto - Cintanya Aku (Official Music Video)(2)(1).mp3" type="audio/mpeg">
     Browser Anda tidak mendukung elemen <code>audio</code>.
@@ -123,8 +86,6 @@
 }
 
   </script>
-
-
   <div id="opening" class="opening content hidden">
     <div class="layout animated-element"></div>
     <div class="kotak-opening bawah-atas ">
