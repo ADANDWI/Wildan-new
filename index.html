@@ -21,6 +21,27 @@
     </div>
     </main>
   </section>
+  <script>
+  // Dapatkan elemen tombol "lihat undangan"
+    var button = document.getElementById('buttonId');
+    
+    // Dapatkan elemen yang ingin Anda tampilkan fullscreen
+    var element = document.getElementById('elementId');
+    
+    // Tambahkan event listener untuk tombol
+    button.addEventListener('click', function() {
+        // Periksa apakah browser mendukung fitur fullscreen
+        if (element.requestFullscreen) {
+            element.requestFullscreen();
+        } else if (element.mozRequestFullScreen) { /* Firefox */
+            element.mozRequestFullScreen();
+        } else if (element.webkitRequestFullscreen) { /* Chrome, Safari & Opera */
+            element.webkitRequestFullscreen();
+        } else if (element.msRequestFullscreen) { /* IE/Edge */
+            element.msRequestFullscreen();
+        }
+    });
+    </script>
  <section id="beranda" class="beranda content ">
   <div class="layout animated-element"></div>
   <main>
