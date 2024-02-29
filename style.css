@@ -140,7 +140,7 @@ body {
   overflow-x: hidden;
   
 }
-.awalan .h4{
+.awalan h4{
   color: #ffffff;
 }
 .awalan h3,
@@ -185,11 +185,11 @@ body {
   margin-bottom: 10%;
 }
 .beranda h2{
-  font-style: 'impact';
+  /* font-family: 'impact'; */
   font-size: 2.2rem;
 }
 .beranda h3{
-  font-style: 'impact';
+  /* font-family: 'impact'; */
   font-size: 1.5rem;
 }
 .button-container {
@@ -226,7 +226,7 @@ body {
   overflow-x: hidden;
   
 }
-.beranda .h4{
+.beranda h4{
   color: #ffffff;
 }
 .beranda h3,
@@ -606,6 +606,7 @@ body {
 
 #story h3{
   margin-left: 15px;
+  font-size: 1.6rem;
   margin-bottom: px;
 }
 #story p {
