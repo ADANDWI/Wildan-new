@@ -232,7 +232,8 @@ body {
 .beranda h3,
 .beranda h2 {
   text-align: center;
-  color: white;
+  color: rgb(255, 255, 255);
+  font-family: 'america';
 }
 .beranda::before {
   content: '';
@@ -537,7 +538,10 @@ body {
   height: auto;
 }
 .gallery h2{
-  margin-bottom: 25px;
+  margin-top: 10%;
+  font-size: 3rem;
+  margin-bottom: 5%;
+  font-family: 'janda';
 }
 .gallery-image13 {
   margin: 2px;
@@ -648,7 +652,7 @@ body {
   border-top-right-radius: 10%; /* Set border radius top right */
   overflow: hidden; /* Pastikan gambar tidak meluap keluar dari radius */
   width: 100%; /* Sesuaikan lebar foto */
-  height: 67vh; /* Sesuaikan tinggi foto */
+  height: 100%; /* Sesuaikan tinggi foto */
   margin: 59px auto 30px;
   margin-right:px;
   justify-items: center;
@@ -742,23 +746,28 @@ div.scrollmenu {
   position: fixed;
   bottom: 0;
   display: none;
- z-index: 9999;
- color: #ffffff;
- z-index: 9999;
+  z-index: 9999;
+  color: #ffffff;
+  animation: fadeIn 0.5s ease-in-out; /* Menambahkan animasi fadeIn */
+}
+
+.scrollmenu a i {
+  display: block;
+  margin-bottom: 5px; /* Sesuaikan sesuai kebutuhan */
 }
 
 .scrollmenu a {
-display: inline-block;
-text-align: center;
-padding: 14px;
-text-decoration: none;
-color: #ffffff
-
+  display: inline-block;
+  text-align: center;
+  padding: 14px;
+  text-decoration: none;
+  color: #ffffff;
 }
 
 div.scrollmenu a:hover {
-background-color: #ffffff9d;
+  background-color: #ffffff9d;
 }
+
 @keyframes fadeIn {
   0% {
     opacity: 0;

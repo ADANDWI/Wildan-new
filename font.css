@@ -1,0 +1,10 @@
+@font-face {
+    font-family: 'janda';
+    src: url('font/GERALDINE\ PERSONAL\ USE.ttf') format('truetype');
+    /* Ganti path/to/font.ttf dengan path sesuai dengan lokasi font di proyek Anda */
+}
+@font-face {
+    font-family: 'america';
+    src: url('font/American\ Champion.ttf') format('truetype');
+    /* Ganti path/to/font.ttf dengan path sesuai dengan lokasi font di proyek Anda */
+}
