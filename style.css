@@ -20,30 +20,8 @@ body {
 .content{
   display: none;
 }
-/* Untuk layar dengan lebar kurang dari atau sama dengan 768px */
-@media (max-width: 768px) {
-  .story {
-    padding: 15px; /* Mengurangi padding agar lebih sesuai dengan layar kecil */
-  }
-  .lingkaran {
-    margin-top: 5px; /* Mengurangi margin atas lingkaran */
-    margin-right: 10px; /* Menambah margin kanan agar terpisah dari teks */
-  }
-  .garis {
-    margin-left: 20px; /* Menyesuaikan margin kiri garis */
-  }
-  #story h3{
-    margin-left: 20px; /* Menyesuaikan margin kiri untuk teks */
-    font-size: 1.2rem;
-  }
-  #story p{
-    font-size: 2rem;
-  }
-
-}
-
 /* Untuk layar dengan lebar kurang dari atau sama dengan 480px */
-@media (max-width: 480px) {
+@media(max-width: 768px) {
   .lingkaran{
     margin-left: -17px;
   }
@@ -55,12 +33,17 @@ body {
     font-size: 1.5rem;
   }
   #groom h3{
-    font-size: 2.3rem;
+    font-size: 3rem;
     margin-top: -40px;
+    font-family: 'payback';
+  }
+  #groom.text-container .p{
+    font-size: 1.2rem;
   }
   #bridge h3{
     font-size: 3rem;
-    margin-top: -45px;
+    margin-top: -40px;
+    font-family: 'payback';
   }
   #qoutes p{
     font-size: 1.2rem;
@@ -82,7 +65,31 @@ body {
     border: 2px solid black;
     justify-items: center;
   }
-  
+  #filter.filter img {
+    margin-top: 70%;
+    border-top-left-radius: 10%; /* Set border radius top left */
+    border-top-right-radius: 10%; /* Set border radius top right */
+    overflow: hidden; /* Pastikan gambar tidak meluap keluar dari radius */
+    width: 100%; /* Sesuaikan lebar foto */
+    height: 100%; /* Sesuaikan tinggi foto */
+    margin: 2px auto 1px;
+    margin-right:px;
+    justify-items: center;
+    
+  }
+  #layout::after {
+    content: ''; /* Membuat lapisan overlay */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url(img/pngwing.com__1_-removebg-preview.png); /* Gradient overlay warna merah marun */
+    /* background-image ;: url(img/BS\ \(323\ of\ 508\).jpg); */
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+  }
 }
 
 .opening {
@@ -333,9 +340,7 @@ body {
   width:90% ;
   color: #000000; /* Warna teks */ 
 }
-.groom.text-container .p{
-  font-size: 1.2rem;
-}
+
 .foto-groom {
   margin-top: 45%;
   border-top-left-radius: 35%; /* Set border radius top left */
@@ -610,8 +615,9 @@ body {
 
 #story h3{
   margin-left: 15px;
-  font-size: 1.6rem;
+  font-size: 1rem;
   margin-bottom: px;
+  font-family: 'mercy';
 }
 #story p {
   margin-left: 15px; 
@@ -619,6 +625,7 @@ body {
 }
 #story h2{
   margin-bottom: 10px;
+  font-family: 'mercy';
 }
 
 .filter {
@@ -644,22 +651,9 @@ body {
   background-position: center;
   z-index: -2;
   background-image: url(img/Desain\ tanpa\ judul_20240220_114822_0000.png);
- 
+ z-index: ;
 }
-.filter img {
-  margin-top: 70%;
-  border-top-left-radius: 10%; /* Set border radius top left */
-  border-top-right-radius: 10%; /* Set border radius top right */
-  overflow: hidden; /* Pastikan gambar tidak meluap keluar dari radius */
-  width: 100%; /* Sesuaikan lebar foto */
-  height: 100%; /* Sesuaikan tinggi foto */
-  margin: 59px auto 30px;
-  margin-right:px;
-  justify-items: center;
-  background-image: url('img/Faruq.jpeg'); /* Ganti dengan URL gambar yang sesuai */
-  background-size: cover;
-  background-position: center;
-}
+
 .btn{
   height: 5vh;
   width: 100%;
@@ -730,12 +724,12 @@ body {
 }
 .teks-thanks h3{
   font-size: 1.3rem;
-  font-family: serif;
+  font-family: 'america';
   
 }
 .teks-thanks h1{
   font-size: 2.5rem;
-  font-family: serif;
+  font-family: 'america';
   
 }
 div.scrollmenu {
