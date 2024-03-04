@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
   <title>Wedding Winda Faruq</title>
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="countdown/simplyCountdown.theme.default.css">
@@ -26,27 +26,8 @@
     </div>
     </main>
   </section>
-  <script>
-  // Dapatkan elemen tombol "lihat undangan"
-    var button = document.getElementById('buttonId');
-    
-    // Dapatkan elemen yang ingin Anda tampilkan fullscreen
-    var element = document.getElementById('elementId');
-    
-    // Tambahkan event listener untuk tombol
-    button.addEventListener('click', function() {
-        // Periksa apakah browser mendukung fitur fullscreen
-        if (element.requestFullscreen) {
-            element.requestFullscreen();
-        } else if (element.mozRequestFullScreen) { /* Firefox */
-            element.mozRequestFullScreen();
-        } else if (element.webkitRequestFullscreen) { /* Chrome, Safari & Opera */
-            element.webkitRequestFullscreen();
-        } else if (element.msRequestFullscreen) { /* IE/Edge */
-            element.msRequestFullscreen();
-        }
-    });
-    </script>
+  
+  
  <section id="beranda" class="beranda content ">
   <div class="layout animated-element"></div>
   <main>
@@ -270,30 +251,58 @@
     });
   </script>
 <script>
-   document.querySelector('.scrollmenu').addEventListener('click', function(event) {
-    if (event.target.tagName === 'A') {
-        event.preventDefault();
-        
-        // Menyembunyikan semua halaman kecuali yang terkait dengan tautan yang diklik
-        document.querySelectorAll('.content').forEach(content => {
-            content.style.display = 'none';
-        });
-        
-        // Menampilkan halaman yang terkait dengan tautan yang diklik
-        const targetId = event.target.getAttribute('href').substring(1); // Mengambil ID dari tautan
-        const targetPage = document.getElementById(targetId);
-        if (targetPage) {
-            // Menampilkan halaman terkait
-            targetPage.style.display = 'block';
-            
-            // Mengatur ulang properti display untuk tombol navbar
-            document.querySelector('.scrollmenu a.active').classList.remove('active');
-            event.target.classList.add('active');
-        }
-    }
-});
-
-</script>
+  document.querySelector('.button').addEventListener('click', function() {
+      // Panggil fungsi untuk menampilkan halaman setelah tombol "Lihat Undangan" ditekan
+      showInvitation();
+  
+      // Setelah 30 detik, halaman akan berganti secara otomatis
+      setTimeout(changeDisplayAutomatically, 20000); // 30000 milidetik = 30 detik
+  });
+  
+  // Fungsi untuk menampilkan halaman
+  function showInvitation() {
+      // Tampilkan navbar
+      document.querySelector('.scrollmenu').style.display = 'block';
+  
+      // Tampilkan halaman-halaman lainnya
+      document.querySelectorAll('.content').forEach(content => {
+          content.style.display = 'block';
+      });
+  
+      // Sembunyikan halaman Awalan
+      document.querySelector('.awalan').style.display = 'none';
+  }
+  
+  // Fungsi untuk mengubah display secara otomatis setiap 30 detik
+  function changeDisplayAutomatically() {
+      // Dapatkan semua elemen dengan kelas 'content'
+      var contentElements = document.querySelectorAll('.content');
+  
+      // Cari elemen yang sedang ditampilkan
+      var visibleElement;
+      contentElements.forEach(contentElement => {
+          if (contentElement.style.display != 'none') {
+              visibleElement = contentElement;
+          }
+      });
+  
+      // Sembunyikan elemen yang sedang ditampilkan
+      if (visibleElement) {
+          visibleElement.style.display = 'none';
+      }
+  
+      // Temukan indeks elemen yang sedang ditampilkan
+      var visibleIndex = Array.from(contentElements).indexOf(visibleElement);
+  
+      // Tampilkan elemen berikutnya atau kembali ke awal jika sudah sampai di akhir
+      if (visibleIndex < contentElements.length - 1) {
+          contentElements[visibleIndex + 1].style.display = 'block';
+      } else {
+          contentElements[0].style.display = 'block';
+      }
+  }
+  </script>
+  
 
 </body>
 </html>
