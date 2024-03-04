@@ -26,8 +26,15 @@
     </div>
     </main>
   </section>
-  
-  
+  <script>
+    const urlParams = new URLSearchParams(window.location.search);
+    const nama = urlParams.get('n') || '';
+    const pronoun = urlParams.get('p') || 'Bapak/Ibu/Saudara/i';
+    const namaContainer = document.querySelector('.kotak-beranda h4 span');
+    namaContainer.innerText = `${pronoun} ${nama},`.replace(/ ,$/, ',');
+
+    document.querySelector('#nama').value = nama;
+    </script>
  <section id="beranda" class="beranda content ">
   <div class="layout animated-element"></div>
   <main>
@@ -45,7 +52,7 @@
       const urlParams = new URLSearchParams(window.location.search);
       const nama = urlParams.get('n') || '';
       const pronoun = urlParams.get('p') || 'Bapak/Ibu/Saudara/i';
-      const namaContainer = document.querySelector('.beranda h4 span');
+      const namaContainer = document.querySelector('.kotak-beranda h4 span');
       namaContainer.innerText = `${pronoun} ${nama},`.replace(/ ,$/, ',');
   
       document.querySelector('#nama').value = nama;
@@ -97,7 +104,7 @@
   </script>
   <div id="opening" class="opening content hidden">
     <div class="layout animated-element"></div>
-    <div class="kotak-opening bawah-atas ">
+    <div class="kotak-opening ">
     <p>We are Getting Married</p>
     <h2>FAISAL FARUQ <br> & WINDA AYU AMELIA</h2>
     <p>Sabtu, 16 April 2024</p>
@@ -219,7 +226,9 @@
   </div>
 <div id="filter" class="filter content">
   <div class="layout animated-element"></div>
-  <img class="kanan-kiri" src="img/WhatsApp Image 2024-02-23 at 09.33.19.jpeg" alt="" width="100%" >
+  <object data="your-svg-image.svg" type="image/svg+xml"> 
+    <img src="img/WhatsApp Image 2024-02-23 at 09.33.19.jpeg">
+</object>
   <center><a href="https://www.instagram.com/ar/380022517963862/"><button class="btn kiri-kanan">Use Filter</button></a></center>
 </div>  
 <div id="thanks" class="thanks content">
@@ -251,27 +260,6 @@
     });
   </script>
 <script>
-  document.querySelector('.button').addEventListener('click', function() {
-      // Panggil fungsi untuk menampilkan halaman setelah tombol "Lihat Undangan" ditekan
-      showInvitation();
-  
-      // Setelah 30 detik, halaman akan berganti secara otomatis
-      setTimeout(changeDisplayAutomatically, 20000); // 30000 milidetik = 30 detik
-  });
-  
-  // Fungsi untuk menampilkan halaman
-  function showInvitation() {
-      // Tampilkan navbar
-      document.querySelector('.scrollmenu').style.display = 'block';
-  
-      // Tampilkan halaman-halaman lainnya
-      document.querySelectorAll('.content').forEach(content => {
-          content.style.display = 'block';
-      });
-  
-      // Sembunyikan halaman Awalan
-      document.querySelector('.awalan').style.display = 'none';
-  }
   
   // Fungsi untuk mengubah display secara otomatis setiap 30 detik
   function changeDisplayAutomatically() {
@@ -302,7 +290,21 @@
       }
   }
   </script>
-  
+  <script>
+    // Contoh JavaScript untuk menyesuaikan tata letak navbar saat pengguna menggulir halaman
+window.addEventListener('scroll', function() {
+  var navbar = document.querySelector('.scrollmenu');
+  if (window.scrollY > 100) {
+    // Jika pengguna menggulir lebih dari 100 piksel, ubah tata letak navbar
+    navbar.classList.add('scrolled');
+  } else {
+    // Jika tidak, kembalikan ke tata letak awal
+    navbar.classList.remove('scrolled');
+  }
+});
 
+  </script>
+
+</script>
 </body>
 </html>

@@ -31,7 +31,7 @@ body {
     /* font-size: 0.5.6rem; */
   }
   #story p{
-    font-size: 1.5rem;
+    font-size: 4vw;
   }
   #groom h3{
     font-size: 3rem;
@@ -47,7 +47,7 @@ body {
     font-family: 'payback';
   }
   #qoutes p{
-    font-size: 1.2rem;
+    font-size: 5vw;
   }
 
   #maps .kotak-maps{
@@ -619,10 +619,6 @@ body {
   font-size: 1rem;
   margin-bottom: px;
   font-family: 'mercy';
-}
-#story p {
-  margin-left: 15px; 
-  font-size: 0.95rem;
 }
 #story h2{
   margin-bottom: 10px;
