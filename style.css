@@ -34,7 +34,7 @@ body {
   .content {
     width: 100%; /* Sesuaikan lebar sesuai kebutuhan */
     margin: 0 auto; /* Membuat konten berada di tengah */
-    max-width: 480px; /* Membatasi lebar konten agar tidak terlalu lebar pada layar laptop */
+    max-width: 640px; /* Membatasi lebar konten agar tidak terlalu lebar pada layar laptop */
   }
 
   /* Atur lebar elemen-elemen tertentu jika diperlukan */
