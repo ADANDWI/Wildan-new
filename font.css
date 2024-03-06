@@ -14,8 +14,8 @@
     /* Ganti path/to/font.ttf dengan path sesuai dengan lokasi font di proyek Anda */
 }
 @font-face {
-    font-family: 'payback';
-    src: url('font/Payback.otf') format('truetype');
+    font-family: 'catbrother';
+    src: url('font/Catbrother.ttf') format('truetype');
     /* Ganti path/to/font.ttf dengan path sesuai dengan lokasi font di proyek Anda */
 }
 @font-face {
@@ -26,5 +26,10 @@
 @font-face {
     font-family: 'cali';
     src: url('font/Calinastiya\ demo.ttf') format('truetype');
+    /* Ganti path/to/font.ttf dengan path sesuai dengan lokasi font di proyek Anda */
+}
+@font-face {
+    font-family: 'jung';
+    src: url('font/JunglewoodScript_PERSONAL_USE_ONLY.otf') format('truetype');
     /* Ganti path/to/font.ttf dengan path sesuai dengan lokasi font di proyek Anda */
 }

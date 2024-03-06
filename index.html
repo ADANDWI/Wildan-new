@@ -1,16 +1,16 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html PUBLIC “-//W3C//DTD XHTML 1.0 Transitional//EN” “http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd”>
+<html xmlns=”http://www.w3.org/1999/xhtml”>
 <head>
-  <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-  <title>Wedding Winda Faruq</title>
+<meta http-equiv=”Content-Type” content=”text/html; charset=utf-8″ />
+<title>Web versi mobile</title>
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="countdown/simplyCountdown.theme.default.css">
   <link rel="stylesheet" href="font.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
   <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  
+  <link rel="stylesheet" href="media/hp.css">
 </head>
 <body>
   <section id="awalan" class="awalan content ">
@@ -26,15 +26,6 @@
     </div>
     </main>
   </section>
-  <script>
-    const urlParams = new URLSearchParams(window.location.search);
-    const nama = urlParams.get('n') || '';
-    const pronoun = urlParams.get('p') || 'Bapak/Ibu/Saudara/i';
-    const namaContainer = document.querySelector('.kotak-beranda h4 span');
-    namaContainer.innerText = `${pronoun} ${nama},`.replace(/ ,$/, ',');
-
-    document.querySelector('#nama').value = nama;
-    </script>
  <section id="beranda" class="beranda content ">
   <div class="layout animated-element"></div>
   <main>
@@ -48,15 +39,15 @@
   </div>
   </main>
 </section>
-    <script>
-      const urlParams = new URLSearchParams(window.location.search);
-      const nama = urlParams.get('n') || '';
-      const pronoun = urlParams.get('p') || 'Bapak/Ibu/Saudara/i';
-      const namaContainer = document.querySelector('.kotak-beranda h4 span');
-      namaContainer.innerText = `${pronoun} ${nama},`.replace(/ ,$/, ',');
-  
-      document.querySelector('#nama').value = nama;
-      </script>
+<script>
+  const urlParams = new URLSearchParams(window.location.search);
+  const nama = urlParams.get('n') || '';
+  const pronoun = urlParams.get('p') || 'Bapak/Ibu/Saudara/i';
+  const namaContainer = document.querySelector('.kotak-beranda h4 span');
+  namaContainer.innerText = `${pronoun} ${nama},`.replace(/ ,$/, ',');
+
+  document.querySelector('#nama').value = nama;
+  </script>
   <audio id="my_audio" loop>
     <source src="audio/Tiara Andini, Arsy Widianto - Cintanya Aku (Official Music Video)(2)(1).mp3" type="audio/mpeg">
     Browser Anda tidak mendukung elemen <code>audio</code>.
@@ -73,41 +64,65 @@
   });
   </script>
   <div class="scrollmenu">
-    <a href="#beranda" class="active"><i class='fas fa-home' style='font-size:20px'></i> Beranda</a>
-    <a href="#opening"><i class='fas fa-align-left' style='font-size:20px'></i>Opening</a>
-    <a href="#qoutes"><i class='fas fa-align-right' style='font-size:20px'></i>Qoutes</a>
-    <a href="#groom"><i class='fas fa-heartbeat' style='font-size:20px'></i>Groom</a>
-    <a href="#bridge"><i class='fas fa-heartbeat' style='font-size:20px'></i>Bridge</a>
-    <a href="#acara"><i class='far fa-calendar-alt' style='font-size:20px'></i>Acara</a>
-    <a href="#maps"><i class='fas fa-map-marker-alt' style='font-size:20px'></i>Maps</a>  
-    <a href="#gallery"><i class='far fa-images' style='font-size:20px'></i> Gallery</a>
-    <a href="#story"><i class='fas fa-align-justify' style='font-size:20px'></i>Story</a>
-    <a href="#filter"><i class='far fa-id-badge' style='font-size:20px'></i>Filter</a>
-    <a href="#thanks"><i class='fas fa-check-square' style='font-size:20px'></i>Thanks</a>
+    <a href="#beranda" class="active"><i class='fas fa-home' style='font-size:15px'></i> Beranda</a>
+    <a href="#opening"><i class='fas fa-align-left' style='font-size:15px'></i>Opening</a>
+    <a href="#qoutes"><i class='fas fa-align-right' style='font-size:15px'></i>Qoutes</a>
+    <a href="#groom"><i class='fas fa-heartbeat' style='font-size:15px'></i>Groom</a>
+    <a href="#bridge"><i class='fas fa-heartbeat' style='font-size:15px'></i>Bridge</a>
+    <a href="#acara"><i class='far fa-calendar-alt' style='font-size:15px'></i>Acara</a>
+    <a href="#maps"><i class='fas fa-map-marker-alt' style='font-size:15px'></i>Maps</a>  
+    <a href="#gallery"><i class='far fa-images' style='font-size:15px'></i> Gallery</a>
+    <a href="#story"><i class='fas fa-align-justify' style='font-size:15px'></i>Story</a>
+    <a href="#filter"><i class='far fa-id-badge' style='font-size:15px'></i>Filter</a>
+    <a href="#thanks"><i class='fas fa-check-square' style='font-size:15px'></i>Thanks</a>
   </div>
   
 
   <script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const button = document.querySelector('.button');
+        button.addEventListener('click', function () {
+            document.querySelector('.scrollmenu').classList.add('left');
+        });
+    });
+
+    document.addEventListener('DOMContentLoaded', function () {
+        var navbarLinks = document.querySelectorAll('.scrollmenu a');
+
+        navbarLinks.forEach(function (link) {
+            link.addEventListener('click', function (event) {
+                event.preventDefault();
+                var targetId = link.getAttribute('href').substring(1);
+                var targetPage = document.getElementById(targetId);
+                if (targetPage) {
+                    document.querySelectorAll('.content').forEach(function (content) {
+                        content.style.display = 'none';
+                    });
+                    targetPage.style.display = 'block';
+                    document.querySelector('.scrollmenu a.active').classList.remove('active');
+                    link.classList.add('active');
+                    document.querySelector('.scrollmenu').classList.remove('left');
+                }
+            });
+        });
+    });
+</script>
+
+<script>
     function showInvitation() {
-  // Tampilkan navbar
-  document.querySelector('.scrollmenu').style.display = 'block';
-
-  // Tampilkan halaman-halaman lainnya
-  document.querySelectorAll('.content').forEach(content => {
-    content.style.display = 'block';
-  });
-
-  // Sembunyikan halaman Awalan
-  document.querySelector('.awalan').style.display = 'none';
-}
-
-  </script>
+        document.querySelector('.scrollmenu').style.display = 'block';
+        document.querySelectorAll('.content').forEach(content => {
+            content.style.display = 'block';
+        });
+        document.querySelector('.awalan').style.display = 'none';
+    }
+</script>
   <div id="opening" class="opening content hidden">
     <div class="layout animated-element"></div>
     <div class="kotak-opening ">
     <p>We are Getting Married</p>
     <h2>FAISAL FARUQ <br> & WINDA AYU AMELIA</h2>
-    <p>Sabtu, 16 April 2024</p>
+    <p>Selasa, 16 April 2024</p>
   </div>
 </div>  
   <div id="qoutes" class="qoutes content">
@@ -129,9 +144,9 @@
     <div class="foto-groom bawah-atas"></div>
     <div class="text-container atas-bawah">
         <h3 >FAISAL FARUQ</h3>
-        <p style="font-size: 2rem;">
+        <p >
             <i>Putra dari :</i><br>
-            Bapak Asnaful Aminin & Ibu Suryati
+            Bpk Asnaful Aminin <br>&<br> Ibu Suryati
         </p>
         <a href="https://www.instagram.com/faisalfrq/">
           <p style="font-size: 22px; color: rgb(0, 0, 0);"><i class="fa fa-instagram" style="font-size:24px"></i>faisalfrq</p>
@@ -142,10 +157,10 @@
   <div class="layout animated-element "></div>
   <div class="foto-bridge bawah-atas"></div>
   <div class="text-container atas-bawah">
-      <h3 >WINDA AYU</h3>
+      <h3 >WINDA AYU AMELIA</h3>
       <p style="font-size: 2rem;">
           <i>Putri dari :</i><br>
-          Bapak Khoirul Huda & Ibu Nurhidayah
+          Bpk Khoirul Huda <br>&<br> Ibu Nurhidayah
       </p>
       <a href="https://www.instagram.com/wndh_ayu/">
         <p style="font-size: 22px; color: rgb(0, 0, 0);"><i class="fa fa-instagram" style="font-size:24px"></i>wndh_ayu</p>
@@ -259,52 +274,30 @@
       },
     });
   </script>
-<script>
-  
-  // Fungsi untuk mengubah display secara otomatis setiap 30 detik
-  function changeDisplayAutomatically() {
-      // Dapatkan semua elemen dengan kelas 'content'
-      var contentElements = document.querySelectorAll('.content');
-  
-      // Cari elemen yang sedang ditampilkan
-      var visibleElement;
-      contentElements.forEach(contentElement => {
-          if (contentElement.style.display != 'none') {
-              visibleElement = contentElement;
-          }
-      });
-  
-      // Sembunyikan elemen yang sedang ditampilkan
-      if (visibleElement) {
-          visibleElement.style.display = 'none';
-      }
-  
-      // Temukan indeks elemen yang sedang ditampilkan
-      var visibleIndex = Array.from(contentElements).indexOf(visibleElement);
-  
-      // Tampilkan elemen berikutnya atau kembali ke awal jika sudah sampai di akhir
-      if (visibleIndex < contentElements.length - 1) {
-          contentElements[visibleIndex + 1].style.display = 'block';
-      } else {
-          contentElements[0].style.display = 'block';
-      }
-  }
-  </script>
-  <script>
-    // Contoh JavaScript untuk menyesuaikan tata letak navbar saat pengguna menggulir halaman
-window.addEventListener('scroll', function() {
-  var navbar = document.querySelector('.scrollmenu');
-  if (window.scrollY > 100) {
-    // Jika pengguna menggulir lebih dari 100 piksel, ubah tata letak navbar
-    navbar.classList.add('scrolled');
-  } else {
-    // Jika tidak, kembalikan ke tata letak awal
-    navbar.classList.remove('scrolled');
-  }
-});
-
-  </script>
-
-</script>
+      <script>
+      document.querySelector('.scrollmenu').addEventListener('click', function(event) {
+        if (event.target.tagName === 'A') {
+            event.preventDefault();
+    
+            // Menyembunyikan semua halaman kecuali yang terkait dengan tautan yang diklik
+            document.querySelectorAll('.content').forEach(content => {
+                content.style.display = 'none';
+            });
+    
+            // Menampilkan halaman yang terkait dengan tautan yang diklik
+            const targetId = event.target.getAttribute('href').substring(1); // Mengambil ID dari tautan
+            const targetPage = document.getElementById(targetId);
+            if (targetPage) {
+                // Menampilkan halaman terkait
+                targetPage.style.display = 'block';
+    
+                // Mengatur ulang properti display untuk tombol navbar
+                document.querySelector('.scrollmenu a.active').classList.remove('active');
+                event.target.classList.add('active');
+            }
+        }
+    });
+    
+    </script>
 </body>
 </html>
