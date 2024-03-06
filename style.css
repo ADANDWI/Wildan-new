@@ -29,7 +29,155 @@ body {
   
 }
 
+@media (min-width: 641px) {
+  /* Atur lebar kontainer utama */
+  .content {
+    width: 100%; /* Sesuaikan lebar sesuai kebutuhan */
+    margin: 0 auto; /* Membuat konten berada di tengah */
+    max-width: 480px; /* Membatasi lebar konten agar tidak terlalu lebar pada layar laptop */
+  }
 
+  /* Atur lebar elemen-elemen tertentu jika diperlukan */
+  .example-element {
+    width: 100%; /* Sesuaikan lebar elemen sesuai kebutuhan */
+  } 
+ .lingkaran{
+  margin-left: -17px;
+}
+#story p{
+  font-size: 2.4vw;
+  line-height: bold;
+}
+#story h3{
+  margin-left: 15px;
+  font-size: 3.5vw;
+  margin-bottom: px;
+  font-family: 'mercy';
+}
+#story h2{
+  margin-bottom: 10px;
+  font-family: 'mercy';
+  font-size: 4vw;
+}
+#groom h3{
+  font-size: 5vw;
+  margin-top: -50px;
+  font-family: 'jung';
+}
+#groom p{
+  font-size: 5.5vw;
+}
+#bridge h3{
+  font-size: 5vw;
+  margin-top: -50px;
+  font-family: 'jung';
+}
+#qoutes p{
+  font-size: 4.5vw;
+}
+
+#maps .kotak-maps{
+  margin: 5% auto 10%;
+  margin-left: %;
+}
+.teks-thanks{
+  margin-top: 60%;
+  text-align: center;
+  /* font-family: cursive; */
+  justify-content: center;
+  
+}
+.teks-thanks p{
+  font-size: 1.3rem;
+}
+.teks-thanks h3{
+  font-size: 1.3rem;
+  font-family: 'america';
+  
+}
+.teks-thanks h1{
+  font-size: 2.5rem;
+  font-family: 'america';
+  
+}
+#thanks .kotak2{
+  margin-top: 35%;
+  margin-bottom: 10px;
+  width: calc(64% - 5px);
+  height: 1%;
+}
+.kotak2{
+  margin-top: 35%;
+  margin-bottom: 10px;
+  width: calc(64% - 5px);
+  height: 1%;
+}
+
+.kotak2 img{
+  width: 155%;
+  height: 25vh;
+  border: 2px solid black;
+  justify-items: center;
+}
+#filter.filter img {
+  border-top-left-radius: 10%; /* Set border radius top left */
+  border-top-right-radius: 10%; /* Set border radius top right */
+  overflow: hidden; /* Pastikan gambar tidak meluap keluar dari radius */
+  width: 100%; /* Sesuaikan lebar foto */
+  height: 75%; /* Sesuaikan tinggi foto */
+  margin-right:px;
+  justify-items: center;
+}
+#layout::after {
+  content: ''; /* Membuat lapisan overlay */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url(img/pngwing.com__1_-removebg-preview.png); /* Gradient overlay warna merah marun */
+  /* background-image ;: url(img/BS\ \(323\ of\ 508\).jpg); */
+  background-size: cover;
+  background-position: center;
+  z-index: -1;
+}
+.scrollmenu {
+  width: 55%; /* Lebar scroll menu */
+  background-color: #ff03035b;
+  overflow-x: auto;
+  white-space: nowrap;
+  position: fixed;
+  bottom: 0;
+  left: 50%; /* Menjadikan scroll menu berada di tengah */
+  transform: translateX(-50%);
+  display: none;
+  z-index: 10; /* Nilai z-index yang lebih rendah untuk menempatkannya di bawah konten utama */
+  color: #ffffff;
+  border-radius: ;
+}
+
+.scrollmenu a i {
+  display: block;
+}
+
+.scrollmenu a {
+  display: inline-block;
+  text-align: center;
+  padding: 14px;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+div.scrollmenu a:hover {
+  background-color: #ffffff9d;
+}
+
+/* Hapus aturan CSS untuk media query */
+
+
+/* Hapus aturan CSS untuk media query */
+
+}
 
 /* Untuk layar dengan lebar kurang dari atau sama dengan 480px */
 @media(max-width: 640px) {
