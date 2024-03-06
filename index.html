@@ -13,6 +13,20 @@
   <link rel="stylesheet" href="media/hp.css">
 </head>
 <body>
+  <div class="scrollmenu">
+    <a href="#beranda" class="active"><i class='fas fa-home' style='font-size:15px'></i> Beranda</a>
+    <a href="#opening"><i class='fas fa-align-left' style='font-size:15px'></i>Opening</a>
+    <a href="#qoutes"><i class='fas fa-align-right' style='font-size:15px'></i>Qoutes</a>
+    <a href="#groom"><i class='fas fa-heartbeat' style='font-size:15px'></i>Groom</a>
+    <a href="#bridge"><i class='fas fa-heartbeat' style='font-size:15px'></i>Bridge</a>
+    <a href="#acara"><i class='far fa-calendar-alt' style='font-size:15px'></i>Acara</a>
+    <a href="#maps"><i class='fas fa-map-marker-alt' style='font-size:15px'></i>Maps</a>  
+    <a href="#gallery"><i class='far fa-images' style='font-size:15px'></i> Gallery</a>
+    <a href="#story"><i class='fas fa-align-justify' style='font-size:15px'></i>Story</a>
+    <a href="#filter"><i class='far fa-id-badge' style='font-size:15px'></i>Filter</a>
+    <a href="#thanks"><i class='fas fa-check-square' style='font-size:15px'></i>Thanks</a>
+  </div>
+  <div class="content-wrapper">
   <section id="awalan" class="awalan content ">
     <div class="layout animated-element"></div>
     <main>
@@ -54,29 +68,23 @@
   </audio>
   
   <script>
-  // Panggil fungsi play pada elemen audio saat tombol "Lihat Undangan" diklik
-  document.addEventListener("DOMContentLoaded", function() {
-      var audio = document.getElementById("my_audio");
-      var button = document.querySelector('.button');
-      button.addEventListener('click', function() {
+document.addEventListener("DOMContentLoaded", function() {
+    const button = document.querySelector('.button');
+    button.addEventListener('click', function() {
+        // Meminta elemen HTML utama untuk tampil fullscreen
+        document.documentElement.requestFullscreen();
+        
+        // Memainkan audio
+        var audio = document.getElementById("my_audio");
         audio.play();
-      });
-  });
+
+        // Menyembunyikan navigasi
+        document.querySelector('.scrollmenu').classList.add('left');
+    });
+});
+
   </script>
-  <div class="scrollmenu">
-    <a href="#beranda" class="active"><i class='fas fa-home' style='font-size:15px'></i> Beranda</a>
-    <a href="#opening"><i class='fas fa-align-left' style='font-size:15px'></i>Opening</a>
-    <a href="#qoutes"><i class='fas fa-align-right' style='font-size:15px'></i>Qoutes</a>
-    <a href="#groom"><i class='fas fa-heartbeat' style='font-size:15px'></i>Groom</a>
-    <a href="#bridge"><i class='fas fa-heartbeat' style='font-size:15px'></i>Bridge</a>
-    <a href="#acara"><i class='far fa-calendar-alt' style='font-size:15px'></i>Acara</a>
-    <a href="#maps"><i class='fas fa-map-marker-alt' style='font-size:15px'></i>Maps</a>  
-    <a href="#gallery"><i class='far fa-images' style='font-size:15px'></i> Gallery</a>
-    <a href="#story"><i class='fas fa-align-justify' style='font-size:15px'></i>Story</a>
-    <a href="#filter"><i class='far fa-id-badge' style='font-size:15px'></i>Filter</a>
-    <a href="#thanks"><i class='fas fa-check-square' style='font-size:15px'></i>Thanks</a>
-  </div>
-  
+ 
 
   <script>
     document.addEventListener("DOMContentLoaded", function () {
@@ -299,5 +307,7 @@
     });
     
     </script>
+     <!-- Konten halaman -->
+  </div>
 </body>
 </html>
