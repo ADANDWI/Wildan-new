@@ -44,15 +44,18 @@ body {
  .lingkaran{
   margin-left: -17px;
 }
+#gallery h2{
+  margin-bottom: 20%;
+}
 #story p{
-  font-size: 2.4vw;
+  font-size: 2.2vw;
   line-height: bold;
 }
 #story h3{
   margin-left: 15px;
-  font-size: 3.5vw;
+  font-size: 2vw;
   margin-bottom: px;
-  font-family: 'mercy';
+  font-family: '';
 }
 #story h2{
   margin-bottom: 10px;
@@ -60,20 +63,24 @@ body {
   font-size: 4vw;
 }
 #groom h3{
-  font-size: 5vw;
+  font-size: 9.5vw;
   margin-top: -50px;
   font-family: 'jung';
 }
 #groom p{
-  font-size: 5.5vw;
+  font-size: 4.9vw;
 }
 #bridge h3{
-  font-size: 5vw;
+  font-size: 8vw;
   margin-top: -50px;
   font-family: 'jung';
 }
+#bridge p{
+  font-size:4.9vw;
+}
 #qoutes p{
-  font-size: 4.5vw;
+  margin-top: 5%;
+  font-size: 2.7vw;
 }
 
 #maps .kotak-maps{
@@ -107,8 +114,8 @@ body {
   height: 1%;
 }
 .kotak2{
-  margin-top: 35%;
-  margin-bottom: 10px;
+  margin-top: %;
+  margin-bottom: px;
   width: calc(64% - 5px);
   height: 1%;
 }
@@ -212,6 +219,9 @@ div.scrollmenu a:hover {
     margin-top: -45px;
     font-family: 'jung';
   }
+  #bridge p{
+    font-size: 8.5vw;
+  }
   #qoutes p{
     font-size: 4.5vw;
   }
@@ -247,8 +257,8 @@ div.scrollmenu a:hover {
     height: 1%;
   }
   .kotak2{
-    margin-top: 35%;
-    margin-bottom: 10px;
+    margin-top: %;
+    margin-bottom: px;
     width: calc(64% - 5px);
     height: 1%;
   }
@@ -347,7 +357,7 @@ div.scrollmenu a:hover {
     font-family: 'jung';
   }
   #qoutes p{
-    font-size: 4.5vw;
+    font-size: 4.9vw;
   }
 
   #maps .kotak-maps{
@@ -375,14 +385,12 @@ div.scrollmenu a:hover {
     
   }
   #thanks .kotak2{
-    margin-top: 35%;
-    margin-bottom: 10px;
+    margin-top: %;
     width: calc(64% - 5px);
     height: 1%;
   }
   .kotak2{
-    margin-top: 35%;
-    margin-bottom: 10px;
+    margin-top: 3%;
     width: calc(64% - 5px);
     height: 1%;
   }
@@ -873,6 +881,7 @@ div.scrollmenu a:hover {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  margin-top: -5%;
 }
 
 .gallery-image12 {
