@@ -20,9 +20,7 @@ body {
 .content{
   display: none;
 }
-.content-wrapper {
-  padding-bottom: 60px; /* Untuk memberi ruang agar scrollmenu tidak menutupi konten */
-}
+
 @media (min-width: 320px) and (max-width: 480px) {
   
   /* CSS */
@@ -231,7 +229,7 @@ div.scrollmenu a:hover {
     margin-left: -5%;
   }
   .teks-thanks{
-    margin-top: 50%;
+    margin-top: 5%;
     text-align: center;
     /* font-family: cursive; */
     justify-content: center;
@@ -273,8 +271,8 @@ div.scrollmenu a:hover {
     border-top-left-radius: 10%; /* Set border radius top left */
     border-top-right-radius: 10%; /* Set border radius top right */
     overflow: hidden; /* Pastikan gambar tidak meluap keluar dari radius */
-    width: 100%; /* Sesuaikan lebar foto */
-    height: 75%; /* Sesuaikan tinggi foto */
+    width: %; /* Sesuaikan lebar foto */
+    height: %; /* Sesuaikan tinggi foto */
     margin-right:px;
     justify-items: center;
   }
@@ -361,8 +359,8 @@ div.scrollmenu a:hover {
   }
 
   #maps .kotak-maps{
-    margin: 5% auto 10%;
-    margin-left: -5%;
+    margin: 5% auto 1%;
+    
   }
   .teks-thanks{
     margin-top: %;
@@ -405,9 +403,9 @@ div.scrollmenu a:hover {
     border-top-left-radius: 10%; /* Set border radius top left */
     border-top-right-radius: 10%; /* Set border radius top right */
     overflow: hidden; /* Pastikan gambar tidak meluap keluar dari radius */
-    width: 100%; /* Sesuaikan lebar foto */
-    height: 75%; /* Sesuaikan tinggi foto */
-    margin-right:px;
+    width: 80%; /* Sesuaikan lebar foto */
+    height: %; /* Sesuaikan tinggi foto */
+    margin-left:10%;
     justify-items: center;
   }
   #layout::after {
