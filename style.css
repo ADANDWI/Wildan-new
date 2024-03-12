@@ -190,7 +190,7 @@ div.scrollmenu a:hover {
     margin-left: -17px;
   }
   #story p{
-    font-size: 4vw;
+    font-size: 5vw;
     line-height: bold;
   }
   #story h3{
@@ -327,19 +327,19 @@ div.scrollmenu a:hover {
     margin-left: -17px;
   }
   #story p{
-    font-size: 4vw;
+    font-size: 4.5vw;
     line-height: bold;
   }
   #story h3{
     margin-left: 15px;
-    font-size: 3.5vw;
+    font-size: 9vw;
     margin-bottom: px;
-    font-family: 'mercy';
+    font-family: 'penut';
   }
   #story h2{
     margin-bottom: 10px;
-    font-family: 'mercy';
-    font-size: 4vw;
+    font-family: 'penut';
+    font-size: 6vw;
   }
   #groom h3{
     font-size: 3rem;
@@ -383,7 +383,7 @@ div.scrollmenu a:hover {
     
   }
   #thanks .kotak2{
-    margin-top: %;
+   
     width: calc(64% - 5px);
     height: 1%;
   }
@@ -450,7 +450,12 @@ div.scrollmenu a:hover {
 div.scrollmenu a:hover {
     background-color: #ffffff9d;
 }
-  
+.gallery h2{
+  margin-bottom: 10%;
+  font-size: 3rem;
+  margin-bottom: 5%;
+  font-family: 'janda';
+}
 }
 .opening {
   position: relative;

@@ -33,3 +33,8 @@
     src: url('font/JunglewoodScript_PERSONAL_USE_ONLY.otf') format('truetype');
     /* Ganti path/to/font.ttf dengan path sesuai dengan lokasi font di proyek Anda */
 }
+@font-face {
+    font-family: 'penut';
+    src: url('font/Peanut\ Butter.ttf') format('truetype');
+    /* Ganti path/to/font.ttf dengan path sesuai dengan lokasi font di proyek Anda */
+}
